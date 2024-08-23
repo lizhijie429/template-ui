@@ -1,0 +1,10 @@
+src/
+
+.npmignore
+.release-it.json
+
+CHANGELOG.md
+
+vite.config.ts
+tsconfig.json
+stats.html
