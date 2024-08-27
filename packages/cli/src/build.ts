@@ -27,6 +27,7 @@ const captureResult = (message: string) => {
 /**
  * 构建样式（vite打包时没有构建css样式）
  * @param componentPath
+ * @param distPath
  * @returns
  */
 const buildStyle = async (componentPath: string, distPath: string) => {
@@ -58,6 +59,8 @@ const buildComponent = async (componentPath: string) => {
 
 /**
  * 构建组件库
+ * @param componentPath
+ * @param distPath
  */
 export default async (componentPath: string, distPath: string) => {
   if (!fs.existsSync(componentPath)) {

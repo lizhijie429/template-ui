@@ -7,19 +7,19 @@ import path from "node:path";
  * @param dest 目标目录
  */
 export default async function copyDirectory(src: string, dest: string) {
-  var files = fs.readdirSync(src);
-  files.forEach((item, index) => {
-    var itemPath = path.join(src, item);
-    var itemStat = fs.statSync(itemPath); // 获取文件信息
-    var savedPath = path.join(dest, itemPath.replace(src, ""));
-    var savedDir = savedPath.substring(0, savedPath.lastIndexOf("\\"));
+  const files = fs.readdirSync(src);
+  files.forEach((item) => {
+    const itemPath = path.join(src, item);
+    const itemStat = fs.statSync(itemPath); // 获取文件信息
+    const savedPath = path.join(dest, itemPath.replace(src, ""));
+    const savedDir = savedPath.substring(0, savedPath.lastIndexOf("\\"));
     if (itemStat.isFile()) {
       // 如果目录不存在则进行创建
       if (!fs.existsSync(savedDir)) {
         fs.mkdirSync(savedDir, { recursive: true });
       }
       // 写入到新目录下
-      var data = fs.readFileSync(itemPath);
+      const data = fs.readFileSync(itemPath);
       fs.writeFileSync(savedPath, data);
       // 并且删除原文件
       fs.unlinkSync(itemPath);

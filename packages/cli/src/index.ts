@@ -21,8 +21,8 @@ const buildActions = async (script: any, options: any) => {
 
   try {
     await accessAsync(componentPath, fs.constants.F_OK);
-  } catch (error) {
-    throw new Error(`The path does not exist: >> ${componentPath}`);
+  } catch (err) {
+    throw new Error(`The path does not exist: >> ${err}`);
   }
 
   // 清除dist目录
@@ -54,6 +54,7 @@ program
   .command("build <script>")
   .description("Package Components Business Component Library")
   .option("-c, --clean", "Clear the build directory")
+  // major（主版本号）、minor（次版本号）、patch（修订号）
   .option("-p, --publish <level>", "Publish to npm")
   .action(buildActions);
 
