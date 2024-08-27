@@ -53,8 +53,8 @@ const buildActions = async (script: any, options: any) => {
 program
   .command("build <script>")
   .description("Package Components Business Component Library")
-  .option("-p, --publish <level>", "Publish to npm")
   .option("-c, --clean", "Clear the build directory")
+  .option("-p, --publish <level>", "Publish to npm")
   .action(buildActions);
 
 program.parse();
