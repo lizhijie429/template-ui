@@ -19,5 +19,8 @@
       "require": "./dist/lib/index.js",
       "types": "./dist/types/index.d.ts"
     }
+  },
+  "devDependencies": {
+    "axios": "^1.7.5"
   }
 }
