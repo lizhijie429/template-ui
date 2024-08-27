@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     // 文件路径在解析时的基本url
-    "baseUrl": ".",
+    "baseUrl": "./",
     // jsx的处理方式（保留原有的jsx格式）
     "jsx": "preserve",
     // 打开所有的严格模式检查

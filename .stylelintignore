@@ -1,11 +1,13 @@
-dist
-node_modules
-public
 .husky
 .vscode
 .idea
 *.sh
 *.md
 
+dist
+public
+coverage
+node_modules
 src/assets
+
 stats.html
