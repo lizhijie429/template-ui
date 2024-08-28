@@ -1,0 +1,148 @@
+:root {
+  --vp-c-bg-alt: #fff;
+  --vp-home-hero-name-color: transparent !important;
+  --vp-home-hero-name-background: linear-gradient(
+    120deg,
+    #bd34fe 30%,
+    #41d1ff
+  ) !important;
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #bd34fe 50%,
+    #47caff 50%
+  ) !important;
+  --vp-home-hero-image-filter: blur(60px) !important;
+}
+
+/* 深色模式侧边栏 */
+.dark {
+  --vp-c-bg-alt: #242424;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* 滚动滑块 */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 6px;
+}
+
+.sidebar-link-item.active {
+  background: #52b35e1a;
+}
+
+.example {
+  padding: 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+}
+
+details > summary:first-of-type {
+  padding: 8px 0;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.vp-doc {
+  /* 代码片段下拉菜单 */
+  details {
+    padding: 0 !important;
+    margin-top: -10px !important;
+    background: #f7f7f7 !important;
+    border-radius: 0 !important;
+    border-bottom-right-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+
+    summary {
+      margin: 0 !important;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+
+      &:hover {
+        transition: 0.5s;
+      }
+    }
+
+    &::before {
+      content: "" !important;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: disc;
+
+    li {
+      margin-top: 0;
+    }
+  }
+
+  ul.f-list {
+    list-style: none;
+  }
+
+  /* 表格 */
+  .vp-table__container {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+
+    table {
+      display: inline-table;
+      width: 100%;
+    }
+
+    th,
+    tr:nth-child(2n) {
+      background-color: transparent;
+    }
+
+    td,
+    th {
+      font-size: 15px;
+      text-align: center;
+      border: none;
+    }
+  }
+
+  p.f-text {
+    line-height: 1;
+  }
+}
+
+/* 顶部 logo */
+.VPNavBarTitle.has-sidebar {
+  border: none;
+}
+
+/* 左侧选项链接 */
+.VPSidebarGroup {
+  .VPLink.link.link {
+    padding: 5px 18px;
+    padding-left: 14px !important;
+    margin: 0;
+    transition: 0.4s;
+  }
+
+  .VPLink.link.link.active {
+    box-sizing: border-box;
+
+    .link-text {
+      font-weight: 600;
+    }
+  }
+}
+
+/* 菜单栏 */
+.VPSidebar.open {
+  z-index: 99999;
+}
+
+/* 粘性卡片 */
+.f-sticky-card {
+  margin-top: 20px;
+}

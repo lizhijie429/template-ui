@@ -1,25 +1,44 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+title: TemplateUI
+titleTemplate: 一个Vue3组件库
+
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: TemplateUI
+  text: 一个Vue3组件库
+  tagline: 提供完整搭建教程
+  image:
+    src: /vitepress-logo-large.webp
+    alt: TemplateUI
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 开始
+      link: /docs/installation
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 在 Gitee 上查看
+      link: https://gitee.com/lizhijie429/template-ui
+    - theme: alt
+      text: 在 Github 上查看
+      link: https://github.com/lizhijie429/template-ui
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 💡
+    title: Vue3组件库
+    details: 基于vite打包和TypeScript开发
+  - icon: 📦
+    title: 持续开发中
+    details: 用于Vue3组件库的学习
+  - icon: 🛠️
+    title: 按需引入
+    details: 直接支持按需引入无需配置任何插件。
+  - icon: 💡
+    title: Vue3组件库
+    details: 基于vite打包和TypeScript开发
+  - icon: 📦
+    title: 持续开发中
+    details: 用于Vue3组件库的学习
+  - icon: 🛠️
+    title: 按需引入
+    details: 直接支持按需引入无需配置任何插件。
 ---
-
